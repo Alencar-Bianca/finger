@@ -97,6 +97,7 @@
   background-color: #f3f6fc;
   margin-left: 5px;
   border-radius: 5px;
+  margin-top: 8px;
 }
 
 .btn {
@@ -107,6 +108,7 @@
   font-size: 20px;
   padding: 10px;
   margin: 15px 0;
+  border-radius: 5px;
 }
 
 @media (max-width: 404px) {

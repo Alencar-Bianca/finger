@@ -18,7 +18,7 @@
 }
 
 table {
-  border: 1px solid #ccc;
+  border: 1px solid red;
   border-collapse: collapse;
   margin: 0;
   padding: 0;
@@ -45,12 +45,12 @@ table caption {
 
 table tr {
   background-color: #f8f8f8;
-  border: 1px solid #ccc;
+  border: 1px solid red;
   padding: .35em;
 }
 
 .th {
-  background-color: #ccc;
+  background-color: red;
   width: 100%;
 }
 
@@ -76,7 +76,7 @@ table td {
 @media (max-width: 900px) {
   table th,
   table td {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid red;
     display: block;
     font-size: .8em;
     text-align: right;
@@ -85,7 +85,7 @@ table td {
 
 @media (max-width: 900px) {
   table tr {
-    border-bottom: 4px solid #ccc;
+    border-bottom: 4px solid red;
     display: block;
     margin-bottom: .625em;
   }
@@ -99,6 +99,7 @@ table td {
   font-size: 20px;
   padding: 10px;
   margin: 15px 0;
+  border-radius: 5px;
 }
 
 @media (max-width: 414px) {
@@ -124,11 +125,5 @@ table th {
   table td:last-child {
     border-bottom: 0;
   }
-}
-
-/* general styling */
-body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
 }
 /*# sourceMappingURL=list.component.css.map */
