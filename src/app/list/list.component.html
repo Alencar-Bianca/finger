@@ -1,51 +1,51 @@
 <section class="mainCad">
-      <div class="user">
-        <p class="userS para"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Olá, Finger Digital</p>
-      </div>
-      <div class="container-btn1">
-        <button class="b1"  type="submit" [routerLink]="['/cadastro']" >Cadastrar</button>
-      </div>
-      <section class="cad">
-        <table>
-            <tr>
-              <th>Nome</th>
-              <th >Endereço</th>
-              <th >Email</th>
-              <th >Editar</th>
-            </tr>
-            <tr>
-              <td>Lorem Ipsum</td>
-              <td >Rua bebedouro 192</td>
-              <td>bianca.alencar@fingerdigital.com.br</td>
-              <td><a [routerLink]="['/cadastro']" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-            </tr>
-            <tr>
-                <td>Lorem Ipsum</td>
-              <td >Rua bebedouro 192</td>
-              <td>bianca.alencar@fingerdigital.com.br</td>
-              <td><a [routerLink]="['/cadastro']" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-            </tr>
+  <div class="titulo">
+    <h1></h1>
+  </div>
+  <form>
+    <div class="user">
+      <p class="userS para" ><i class="fa fa-user-circle-o" aria-hidden="true"></i> Olá, Finger Digital</p>
+    </div>
+    <div class="container-btn1">
+      <button class="btn b1"   [routerLink]="['/']">Voltar</button>
+    </div>
+    <div class="cad">
 
-            <tr>
-                <td>Lorem Ipsum</td>
-              <td >Rua bebedouro 192</td>
-              <td>bianca.alencar@fingerdigital.com.br</td>
-              <td><a [routerLink]="['/cadastro']" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-            </tr>
+      <div class="w100"><span class="para">Nome </span>
+        <input name="nome"  class="input w40"  type="text"placeholder="Nome"  required>
+         <span class="para">CEP </span>
+          <input name="cep"  class="input w40"  type="text"placeholder="CEP"  required></div>
 
-            <tr>
-                <td>Lorem Ipsum</td>
-              <td >Rua bebedouro 192</td>
-              <td>bianca.alencar@fingerdigital.com.br</td>
-              <td><a [routerLink]="['/cadastro']" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-            </tr>
 
-            <tr>
-                <td>Lorem Ipsum</td>
-              <td >Rua bebedouro 192</td>
-              <td>bianca.alencar@fingerdigital.com.br</td>
-              <td><a [routerLink]="['/cadastro']" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-            </tr>
-          </table>
-      </section>
-  </section>
+        <div class="w100"><span class="para">Londradouro </span>
+        <input name="londradouro"  class="input w40"  type="text"placeholder="Londradouro"  required>
+        <span class="para">Nº </span>
+        <input name="n"  class="input w20"  type="text"placeholder="Nº"  required></div>
+
+
+
+          <div class="w100">
+            <span class="para">Bairro </span>
+            <input name="bairro"  class="input w30"  type="text"placeholder="Bairro"  required>
+            <span class="para">Complemento </span>
+            <input name="complemento"  class="input w30"  type="text"placeholder="Complemento"  required>
+            <span class="para">Cidade </span>
+            <input name="cidade" class="input w20 " placeholder="Cidade" type="text" required>
+            </div>
+
+
+            <div class="w100">
+              <span class="para">Email </span>
+              <input name="bairro"  class="input w100"  type="email"placeholder="Email"  required>
+            </div>
+
+
+
+        <div class="container-btn">
+          <button class="btn"  type="submit" >Salvar</button>
+        </div>
+
+
+  </div>
+    </form>
+</section>

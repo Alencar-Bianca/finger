@@ -9,21 +9,30 @@
       <div class="container-btn1">
         <button class="btn b1"   [routerLink]="['/']">Voltar</button>
       </div>
+
       <div class="cad">
 
-        <div class="w100"><span class="para">Nome </span>
-          <input name="nome"  class="input w40"  type="text"placeholder="Nome"  required>
-           <span class="para">CEP </span>
-            <input name="cep"  class="input w40"  type="text"placeholder="CEP"  required></div>
+        <div class="w100">
+          <div style="grid-area: nome">
+            <span class="para">Nome </span>
+            <input name="nome"  class="input w40"  type="text"placeholder="Nome"  required>
+          </div>
+
+          <div style="grid-area: cep">
+            <span class="para">CEP </span>
+            <input name="cep"  class="input w40"  type="text"placeholder="CEP"  required>
+          </div>
+
+          <div style="grid-area: ende">
+            <span class="para">Londradouro </span>
+            <input name="londradouro"  class="input w40"  type="text"placeholder="Londradouro"  required>
+            <span class="para">Nº </span>
+            <input name="n"  class="input w20"  type="text"placeholder="Nº"  required>
+        </div>
+        </div>
 
 
-          <div class="w100"><span class="para">Londradouro </span>
-          <input name="londradouro"  class="input w40"  type="text"placeholder="Londradouro"  required>
-          <span class="para">Nº </span>
-          <input name="n"  class="input w20"  type="text"placeholder="Nº"  required></div>
-
-
-
+<!-- 
             <div class="w100">
               <span class="para">Bairro </span>
               <input name="bairro"  class="input w30"  type="text"placeholder="Bairro"  required>
@@ -43,7 +52,7 @@
 
           <div class="container-btn">
             <button class="btn"  type="submit" >Salvar</button>
-          </div>
+          </div> -->
 
 
     </div>

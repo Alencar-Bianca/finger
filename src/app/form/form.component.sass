@@ -21,6 +21,10 @@
     position: absolute
     right: 0
 .cad
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr 
+  gap: 5px
+  grid-template-areas: "nome nome cep  cep" 
   width: $wporcent100
   margin-top: 20px
   background-color: $icon-color
@@ -35,22 +39,22 @@
     display: inline-block
     margin-bottom: 15px
 
-.w40
-    width: $wporcent40
-    display: inline-block
-    @media  (max-width: 404px)
-          width: $wporcent100
+// .w40
+//     width: $wporcent40
+//     display: inline-block
+//     @media  (max-width: 404px)
+//           width: $wporcent100
 
-.w30
-    width: $wporcent30
-    display: inline-block
-    @media  (max-width: 404px)
-          width: $wporcent100
-.w20
-    width: $wporcent20
-    display: inline-block
-    @media  (max-width: 404px)
-          width: $wporcent100
+// .w30
+//     width: $wporcent30
+//     display: inline-block
+//     @media  (max-width: 404px)
+//           width: $wporcent100
+// .w20
+//     width: $wporcent20
+//     display: inline-block
+//     @media  (max-width: 404px)
+//           width: $wporcent100
 
 .para
   display: inline-block
@@ -61,6 +65,7 @@
 
 
 .input
+  width: $wporcent100
   border: 1px solid #ccc
   padding: 10px
   background-color: $input-color
@@ -72,11 +77,9 @@
   background-color: $btn-color
   cursor: pointer
   color: $icon-color
-  font-weight: bold
   font-size: 20px
   padding: 10px
   margin: 15px 0
-  border-radius: 8px
   @media  (max-width: 404px)
           margin-top: 20px
           width: $wporcent100
