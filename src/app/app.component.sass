@@ -1,0 +1,52 @@
+@import  'colors.sass'
+@import  'general-variable.sass'
+
+.main
+  display: $flex
+  width: $wporcent100
+  height: $vh100
+
+.container
+  width: $wporcent100
+  max-width: 1024px
+  margin: 0 auto
+  padding: 0 2%
+
+.header
+  background-color: $header-color
+  height: auto
+  width: 100px
+  @media  (max-height: 667px)
+    height: 150vh
+
+
+
+ul
+  display: $flex
+  flex-direction: column
+  align-items: $center
+  justify-content: $center
+  height: $vh100
+
+li
+ margin-bottom: 15%
+
+
+.icon
+  color: $icon-color
+  font-size: 30px
+  text-decoration: none
+
+
+.area
+  width: $wporcent100
+  grid-area: nav
+  background-color: $bgc-white
+  @media  (max-height: 667px)
+   height: 150vh
+
+
+
+
+
+

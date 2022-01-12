@@ -1,0 +1,98 @@
+@import  '../general-variable.sass'
+@import  '../colors.sass'
+
+.mainCad
+  display: $grid
+  place-items: $center
+  height: $vh50
+  width: $wporcent100
+
+.user
+    width: $wporcent100
+    background-color: red
+    position: relative
+    right: 0
+    @media  (max-width: 404px)
+          right: 80px
+    @media  (max-width: 362px)
+        right: 10px
+
+.userS
+    position: absolute
+    right: 0
+.cad
+  width: $wporcent100
+  margin-top: 20px
+  background-color: $icon-color
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404)
+  padding: 40px
+  @media  (max-width: 404px)
+          margin-top: 0
+          width: $wporcent100
+
+.w100
+    width: $wporcent100
+    display: inline-block
+    margin-bottom: 15px
+
+.w40
+    width: $wporcent40
+    display: inline-block
+    @media  (max-width: 404px)
+          width: $wporcent100
+
+.w30
+    width: $wporcent30
+    display: inline-block
+    @media  (max-width: 404px)
+          width: $wporcent100
+.w20
+    width: $wporcent20
+    display: inline-block
+    @media  (max-width: 404px)
+          width: $wporcent100
+
+.para
+  display: inline-block
+  font-size: 20px
+  padding-left: 5px
+  @media  (max-width: 404px)
+          display: block
+
+
+.input
+  border: 1px solid #ccc
+  padding: 10px
+  background-color: $input-color
+  margin-left: 5px
+
+
+.btn
+  width: $wporcent20
+  background-color: $btn-color
+  cursor: pointer
+  color: $icon-color
+  font-weight: bold
+  font-size: 20px
+  padding: 10px
+  margin: 15px 0
+  border-radius: 8px
+  @media  (max-width: 404px)
+          margin-top: 20px
+          width: $wporcent100
+
+.mainCad
+    .container-btn1
+        margin-top: 150px
+        @media  (max-width: 1024px)
+          margin-top: 20px
+          @media  (max-width: 404px)
+          margin-top: 0
+
+.b1
+  background-color: $bgc-white
+  cursor: pointer
+  color: $header-color
+  font-size: 25px
+
+
