@@ -9,52 +9,50 @@
 
 .user
     width: $wporcent100
-    background-color: red
     position: relative
     right: 0
-    @media  (max-width: 404px)
-          right: 80px
     @media  (max-width: 362px)
         right: 10px
+    
 
 .userS
     position: absolute
     right: 0
+
+    
+
+.btn-back
+  margin: 10px 0
+  @media  (max-width: 362px)
+      margin-top: 30px 
+  .back
+    background-color: $bgc-white
+    cursor: pointer
+    font-size: 20px
+
 .cad
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr 1fr 
+  display: $grid
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
   gap: 5px
-  grid-template-areas: "nome nome cep  cep" 
+  grid-template-areas: "nome  nome nome nome  cep cep" "ende ende  ende ende ende  n" "bairro bairro  complemento complemento cidade  cidade" "email email vazio vazio vazio vazio"
   width: $wporcent100
   margin-top: 20px
   background-color: $icon-color
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404)
   padding: 40px
+  @media  (max-width: 565px)
+          display: $flex
+          flex-direction: column
+          margin-top: 0px
+ 
   @media  (max-width: 404px)
           margin-top: 0
           width: $wporcent100
 
-.w100
-    width: $wporcent100
-    display: inline-block
-    margin-bottom: 15px
+.cad
+  div
+    margin-bottom: 5px
 
-// .w40
-//     width: $wporcent40
-//     display: inline-block
-//     @media  (max-width: 404px)
-//           width: $wporcent100
-
-// .w30
-//     width: $wporcent30
-//     display: inline-block
-//     @media  (max-width: 404px)
-//           width: $wporcent100
-// .w20
-//     width: $wporcent20
-//     display: inline-block
-//     @media  (max-width: 404px)
-//           width: $wporcent100
 
 .para
   display: inline-block
@@ -70,10 +68,11 @@
   padding: 10px
   background-color: $input-color
   margin-left: 5px
+  border-radius: 5px
 
 
 .btn
-  width: $wporcent20
+  width: $wporcent100
   background-color: $btn-color
   cursor: pointer
   color: $icon-color
@@ -81,21 +80,8 @@
   padding: 10px
   margin: 15px 0
   @media  (max-width: 404px)
-          margin-top: 20px
-          width: $wporcent100
-
-.mainCad
-    .container-btn1
-        margin-top: 150px
-        @media  (max-width: 1024px)
-          margin-top: 20px
-          @media  (max-width: 404px)
-          margin-top: 0
-
-.b1
-  background-color: $bgc-white
-  cursor: pointer
-  color: $header-color
-  font-size: 25px
+      margin-top: 20px
+      width: $wporcent100
+  
 
 

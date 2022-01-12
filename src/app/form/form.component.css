@@ -1,0 +1,118 @@
+.mainCad {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.user {
+  width: 100%;
+  position: relative;
+  right: 0;
+}
+
+@media (max-width: 362px) {
+  .user {
+    right: 10px;
+  }
+}
+
+.userS {
+  position: absolute;
+  right: 0;
+}
+
+.btn-back {
+  margin: 10px 0;
+}
+
+@media (max-width: 362px) {
+  .btn-back {
+    margin-top: 30px;
+  }
+}
+
+.btn-back .back {
+  background-color: #f7f8fa;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.cad {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+      grid-template-areas: "nome  nome nome nome  cep cep" "ende ende  ende ende ende  n" "bairro bairro  complemento complemento cidade  cidade" "email email vazio vazio vazio vazio";
+  width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+  padding: 40px;
+}
+
+@media (max-width: 565px) {
+  .cad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 404px) {
+  .cad {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.cad div {
+  margin-bottom: 5px;
+}
+
+.para {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+@media (max-width: 404px) {
+  .para {
+    display: block;
+  }
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f3f6fc;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #40c057;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+@media (max-width: 404px) {
+  .btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=form.component.css.map */

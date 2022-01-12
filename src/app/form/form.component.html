@@ -1,58 +1,58 @@
 <section class="mainCad">
-    <div class="titulo">
-      <h1></h1>
-    </div>
-    <form>
+    <form [formGroup]="formUser">
       <div class="user">
         <p class="userS para" ><i class="fa fa-user-circle-o" aria-hidden="true"></i> Olá, Finger Digital</p>
       </div>
-      <div class="container-btn1">
-        <button class="btn b1"   [routerLink]="['/']">Voltar</button>
+
+      <div class="btn-back">
+        <button class="back"   [routerLink]="['/']">Voltar</button>
       </div>
 
       <div class="cad">
 
-        <div class="w100">
-          <div style="grid-area: nome">
+        
+          <div class="teste" style="grid-area: nome">
             <span class="para">Nome </span>
-            <input name="nome"  class="input w40"  type="text"placeholder="Nome"  required>
+            <input name="nome"  class="input "  type="text"placeholder="Nome"  formControlName="nome">
           </div>
 
-          <div style="grid-area: cep">
+          <div class="teste" style="grid-area: cep">
             <span class="para">CEP </span>
-            <input name="cep"  class="input w40"  type="text"placeholder="CEP"  required>
+            <input name="cep"  class="input "  type="text"placeholder="CEP"  >
           </div>
 
           <div style="grid-area: ende">
             <span class="para">Londradouro </span>
-            <input name="londradouro"  class="input w40"  type="text"placeholder="Londradouro"  required>
+            <input name="londradouro"  class="input w40"  type="text"placeholder="Londradouro"  >
+          </div>
+          <div style="grid-area: n">
             <span class="para">Nº </span>
-            <input name="n"  class="input w20"  type="text"placeholder="Nº"  required>
-        </div>
-        </div>
+            <input name="n"  class="input w20"  type="text"placeholder="Nº"  >
+          </div>
 
+          <div style="grid-area: bairro">
+            <span class="para">Bairro </span>
+            <input name="bairro"  class="input w40"  type="text"placeholder="bairro"  >
+          </div>
+          <div style="grid-area: complemento">
+            <span class="para">Complemento </span>
+            <input name="complemento"  class="input w20"  type="text"placeholder="complemento"  >
+          </div>
+          <div style="grid-area: cidade">
+            <span class="para">Cidade </span>
+            <input name="cidade"  class="input w20"  type="text"placeholder="cidade"  >
+          </div>
 
-<!-- 
-            <div class="w100">
-              <span class="para">Bairro </span>
-              <input name="bairro"  class="input w30"  type="text"placeholder="Bairro"  required>
-              <span class="para">Complemento </span>
-              <input name="complemento"  class="input w30"  type="text"placeholder="Complemento"  required>
-              <span class="para">Cidade </span>
-              <input name="cidade" class="input w20 " placeholder="Cidade" type="text" required>
-              </div>
+          <div style="grid-area: email">
+            <span class="para">Email </span>
+            <input name="email"  class="input email"  type="email" placeholder="cidade"  >
+          </div>
 
-
-              <div class="w100">
-                <span class="para">Email </span>
-                <input name="bairro"  class="input w100"  type="email"placeholder="Email"  required>
-              </div>
-
-
+          <div style="grid-area: vazio"></div>
 
           <div class="container-btn">
             <button class="btn"  type="submit" >Salvar</button>
-          </div> -->
+          </div> 
 
 
     </div>
